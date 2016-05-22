@@ -1,10 +1,25 @@
 <html>
+<style>
+div.scroll {
+    max-width: 80vw;
+    height: 80vh;
+    overflow: scroll;
+}
+
+div.hidden {
+    background-color: #00FF00;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+</style>
    <title>SVG Interactivity</title>
    <body>
       
       <h1>Sample Interactivity</h1>
-      
+<div class="scroll">      
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="1000px" height="1000px" style="overflow-x: auto; overflow-y: auto;"
     viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
     <script type="text/JavaScript">
             <![CDATA[
@@ -12,7 +27,9 @@
                   alert("Yes");
                }
             ]]>
-         </script>
+    </script>
+    <style>
+	</style>
 <g id="Layer_2">
    <path id="level1-store" style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M119.5,477h124l-12,27.5C231.5,504.5,182,600,119.5,477z" onClick="window.location='exhibit.html?exhibit=store';"/>
    <polygon id="level1-cafe" style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" points="101.5,439.5 119.5,477 243.5,477 273,439.5  " onClick="window.location='exhibit.html?exhibit=cafe';"/>
@@ -26,10 +43,7 @@
       <rect x="341" y="216.5" transform="matrix(0.8988 0.4384 -0.4384 0.8988 135.6375 -140.9321)" style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" width="64" height="13.5" onClick="window.location='exhibit.html?exhibit=bridge';"/>
 </g>
 </svg>
-
+</div>
    
    </body>
 </html>
-
-
-
